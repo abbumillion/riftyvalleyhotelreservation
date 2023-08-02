@@ -12,6 +12,7 @@ import org.springframework.data.annotation.Reference;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Table(name = "room")
 public class Room {
     @Id
     private int id;
