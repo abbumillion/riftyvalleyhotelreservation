@@ -2,7 +2,8 @@ package com.app.hotelreservation.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToOne;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,11 +14,10 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Hotel {
+public class ReservedRoom {
     @Id
-    private int hotelId;
-    private String hotelName;
-    private int star;
-    @OneToMany
-    private Room room;
+    private int reservedRoomId;
+    private int numberOfRooms;
+    @ManyToOne
+    private Reservation reservation;
 }
