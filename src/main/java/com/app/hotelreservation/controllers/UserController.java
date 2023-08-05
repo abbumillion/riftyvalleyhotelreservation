@@ -1,5 +1,6 @@
 package com.app.hotelreservation.controllers;
 
+import com.app.hotelreservation.dto.UserDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,17 +16,25 @@ public class UserController {
     {
         return "about";
     }
+
+    @GetMapping("/signup")
+    public String signUp(UserDto userDto)
+    {
+        System.out.println(userDto);
+        return "about";
+    }
+
     @GetMapping("/contactus")
-    public String aontactUs()
+    public String contactUs()
     {
         return "contact us";
     }
-    @GetMapping("/about")
+    @GetMapping("/events")
     public String events()
     {
         return "events";
     }
-    @GetMapping("/about")
+    @GetMapping("/places")
     public String places()
     {
         return "places";

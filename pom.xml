@@ -35,18 +35,28 @@
 			<scope>provided</scope>
 		</dependency>
 
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
 		<!--		SPRING BOOT WEB FRAMEWORK DEPENDENCY-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<!--		&lt;!&ndash;		BOOTSTRAP &ndash;&gt;-->
-		<!--		<dependency>-->
-		<!--			<groupId>org.webjars</groupId>-->
-		<!--			<artifactId>bootstrap</artifactId>-->
-		<!--			<version>3.3.7-1</version>-->
-		<!--		</dependency>-->
-		<!--		SPRING TEST DEPENDENCY-->
+				<!--		BOOTSTRAP -->
+				<dependency>
+					<groupId>org.webjars</groupId>
+					<artifactId>bootstrap</artifactId>
+					<version>3.3.7-1</version>
+				</dependency>
+				SPRING TEST DEPENDENCY
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
