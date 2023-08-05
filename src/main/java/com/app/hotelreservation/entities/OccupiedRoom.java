@@ -1,29 +1,25 @@
 package com.app.hotelreservation.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
 
 import java.util.Date;
 
-@Setter
-@Getter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "occupiedroom")
+@Builder
+@Table(name = "occupied room")
 public class OccupiedRoom {
     @Id
-    private int id;
+    private Long longId;
+    @Column(name = "checkIn" , length = 20 , updatable = false , nullable = false)
     private Date checkIn;
+    @Column(name = "checkOut" , length = 20 , updatable = false )
     private Date checkout;
     @ManyToOne
     private Reservation reservation;
-    @ManyToOne
+    @OneToOne
     private Room room;
 }

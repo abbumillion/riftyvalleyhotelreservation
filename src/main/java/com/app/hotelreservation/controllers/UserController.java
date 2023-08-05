@@ -23,7 +23,6 @@ public class UserController {
         System.out.println(userDto);
         return "about";
     }
-
     @GetMapping("/contactus")
     public String contactUs()
     {

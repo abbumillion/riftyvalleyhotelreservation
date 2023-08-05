@@ -1,26 +1,22 @@
 package com.app.hotelreservation.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
 
 import java.util.Date;
 
-@Setter
-@Getter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Entity
 @Table(name = "reservation")
 public class Reservation {
     @Id
-    private int reservationId;
+    private Long reservationId;
+    @Column(name = "date_in" , length = 20 , updatable = false )
     private Date dateIn;
+    @Column(name = "date_out" , length = 20 , updatable = false )
     private Date dateOut;
     @ManyToOne
     private Guest guest;

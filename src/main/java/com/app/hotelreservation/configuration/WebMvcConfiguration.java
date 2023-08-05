@@ -38,8 +38,6 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
          * about page
          */
         registry.addViewController("/about").setViewName("about");
-        registry.addViewController("/uploadcv").setViewName("uploadcv");
-
         /**
          * contact us page
          */

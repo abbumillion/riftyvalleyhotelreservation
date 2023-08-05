@@ -11,7 +11,7 @@
 	<groupId>com.app</groupId>
 	<artifactId>hotelreservation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>hotelreservation</name>
+	<name>hotel-reservation</name>
 	<description>Hotel Reservation in Rifty Valley</description>
 	<properties>
 		<java.version>17</java.version>
@@ -40,10 +40,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
+
 
 		<!--		SPRING BOOT WEB FRAMEWORK DEPENDENCY-->
 		<dependency>
@@ -54,19 +51,15 @@
 				<dependency>
 					<groupId>org.webjars</groupId>
 					<artifactId>bootstrap</artifactId>
-					<version>3.3.7-1</version>
+					<version>3.4.0</version>
 				</dependency>
 				SPRING TEST DEPENDENCY
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+
 		<!--		SPRING SECURITY CORE-->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-core</artifactId>
-			<version>5.7.2</version>
+			<version>5.7.7</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -75,7 +68,7 @@
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-web</artifactId>
-			<version>5.7.2</version>
+			<version>5.7.7</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.security</groupId>

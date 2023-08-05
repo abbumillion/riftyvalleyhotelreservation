@@ -1,26 +1,21 @@
 package com.app.hotelreservation.services;
 
 import com.app.hotelreservation.dto.Guestdto;
+import com.app.hotelreservation.dto.Hoteldto;
+import com.app.hotelreservation.dto.Roomdto;
 
 import java.util.List;
 
-public class RoomService {
-    // get guest by id
-    public Guestdto getGuestById(long id);
-    // get guest by name
-    public Guestdto getGuestByName(String name);
-    // get a guest by email
-    public Guestdto getGuestByEmail(String email);
-    // getting all guests
-    public List<Guestdto> getAllGuests();
-    // removing guest by id
-    public void removeGuestById(long id);
-    // removing guest by name
-    public void removeGuestByName(String fullName);
-    // removing guest by email
-    public void removeGuestByEmail(String email);
-    // adding guest  to the system
-    public Guestdto addGuest(Guestdto guestdto);
-    // updating guest account information
-    public Guestdto updateGuest(Guestdto guestdto);
+public interface RoomService {
+    public Roomdto getRoomById(long roomId);
+    public Roomdto getRoomByRoomNumber(String roomNumber);
+    public List<Roomdto> getRoomsByStatus(String status);
+    public List<Roomdto> getAllRooms();
+    public List<Roomdto> getAllRooms(Hoteldto hoteldto);
+    public void removeRoomById(long roomId);
+    public void removeRoomByRoomNumber(String roomNumber);
+    public void removeAllRoomsByHotel(Hoteldto hoteldto);
+    public void removeAllRoomsByStatus(String status);
+    public Roomdto addRoom(Roomdto roomdto);
+    public Roomdto updateRoom(Roomdto roomdto);
 }

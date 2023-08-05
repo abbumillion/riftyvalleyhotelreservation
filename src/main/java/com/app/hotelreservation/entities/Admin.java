@@ -4,13 +4,9 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-@Setter
-@Getter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
@@ -24,4 +20,6 @@ public class Admin {
     private String lastName;
     @Column(nullable = false , length = 100,updatable = true)
     private String securityQuestion;
+    @Column(nullable = false , length = 10)
+    private String adminLevel;
 }

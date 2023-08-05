@@ -2,14 +2,16 @@ package com.app.hotelreservation.dto;
 
 import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Builder
 public class EventDto {
-    private long eventId;
+    private Long eventId;
     private String eventName;
     private PlaceDto placeDto;
     private String eventDate;

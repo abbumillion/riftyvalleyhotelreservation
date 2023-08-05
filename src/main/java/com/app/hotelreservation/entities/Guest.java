@@ -4,24 +4,15 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.Date;
 
-@Setter
-@Getter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Entity
-/**
- * this is a guest
- * data class represent
- * anyone looking for room
- * in the system
- */
 @Table(name = "guest")
 public class Guest {
     @Id

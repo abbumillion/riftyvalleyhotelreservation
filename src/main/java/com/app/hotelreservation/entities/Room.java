@@ -2,28 +2,23 @@ package com.app.hotelreservation.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
-import org.springframework.data.annotation.Reference;
 
-@Setter
-@Getter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Table(name = "room")
 public class Room {
     @Id
-    private int id;
+    private Long roomId;
     @Column(nullable = false,length = 20)
-    private String number;
+    private String roomNumber;
     @Column(nullable = false,length = 20)
-    private String name;
+    private double pricePerNight;
     @Column(nullable = false,length = 20)
     private  String status;
-    @Column(nullable = false,length = 20)
-    private boolean smoke;
     @OneToOne
     private RoomType roomType;
 }

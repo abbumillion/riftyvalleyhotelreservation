@@ -14,7 +14,6 @@ public class RoomController {
     public void postRoom(Room room)
     {
         // adding a room to the database
-
     }
     @GetMapping("/getroom")
     public Room getRoom(int id)
