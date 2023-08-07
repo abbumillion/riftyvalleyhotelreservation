@@ -16,7 +16,7 @@ import java.util.List;
 @Table(name = "place")
 public class Place {
     @Id
-    private long placeId;
+    private Long placeId;
     @Column(name = "place name" , nullable = false , length = 100)
     private String placeName;
     @Column(name = "place coordinates" , nullable = false , length = 100)

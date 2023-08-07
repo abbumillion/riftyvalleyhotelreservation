@@ -1,13 +1,11 @@
 package com.app.hotelreservation.entities;
 
-import com.app.hotelreservation.dto.PlaceDto;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -20,7 +18,8 @@ public class Event {
     @Column(name = "event name" , length = 100 , nullable = false)
     private String eventName;
     @Column(name = "event place" , length = 50 , nullable = false)
-    private PlaceDto placeDto;
+    @OneToMany
+    private List<Place> place;
     @Column(name = "event date" , length = 20 , nullable = false)
     private String eventDate;
     @Column(name = "event time" , length = 20 , nullable = false)

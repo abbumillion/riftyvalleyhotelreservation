@@ -1,33 +1,36 @@
 package com.app.hotelreservation.serviceimp;
 
-import com.app.hotelreservation.dto.Admindto;
+import com.app.hotelreservation.dto.AdminDto;
+import com.app.hotelreservation.entities.Admin;
 import com.app.hotelreservation.services.AdminService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class AdminServiceImp implements AdminService {
+
     @Override
-    public void addAdmin(Admindto admindto) {
+    public void addAdmin(Admin admin) {
 
     }
 
     @Override
-    public void removeAdmin(Admindto admindto) {
+    public void removeAdmin(Admin admin) {
 
     }
 
     @Override
-    public void removeAdmin(long adminId) {
+    public void removeAdmin(Long adminId) {
 
     }
 
     @Override
-    public Admindto getAdmin(long adminId) {
+    public AdminDto getAdmin(Long adminId) {
         return null;
     }
 
     @Override
-    public List<Admindto> getAllAdmin() {
+    public List<AdminDto> getAllAdmins() {
         return null;
     }
 }

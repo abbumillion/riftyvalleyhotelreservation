@@ -15,4 +15,14 @@ public class EventMapper {
 //        eventDto.setEventTime(event.getEventTime());
         return eventDto;
     }
+    public static Event EventDtoToEvent(Optional<Event> evnt)
+    {
+        Event event = new Event();
+//        eventDto.setEventId(event.get());
+//        eventDto.setEventName(event.getEventName());
+//        eventDto.setEventDate(event.getEventDate());
+//        eventDto.setEventTime(event.getEventTime());
+        return event;
+    }
+
 }

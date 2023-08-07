@@ -1,6 +1,7 @@
 package com.app.hotelreservation.serviceimp;
 
-import com.app.hotelreservation.dto.Hoteldto;
+import com.app.hotelreservation.dto.HotelDto;
+import com.app.hotelreservation.entities.Hotel;
 import com.app.hotelreservation.repository.HotelRepository;
 import com.app.hotelreservation.services.HotelServices;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,23 +13,24 @@ import java.util.List;
 public class HotelServiceImp implements HotelServices {
     @Autowired
     private HotelRepository hotelRepository;
+
     @Override
-    public Hoteldto getHotelById(long hotelId) {
+    public HotelDto getHotelById(long hotelId) {
         return null;
     }
 
     @Override
-    public Hoteldto getHotelByName(String hotelName) {
+    public HotelDto getHotelByName(String hotelName) {
         return null;
     }
 
     @Override
-    public Hoteldto getHotelByEmail(String hotelEmail) {
+    public HotelDto getHotelByEmail(String hotelEmail) {
         return null;
     }
 
     @Override
-    public List<Hoteldto> getAllHotels() {
+    public List<HotelDto> getAllHotels() {
         return null;
     }
 
@@ -48,12 +50,12 @@ public class HotelServiceImp implements HotelServices {
     }
 
     @Override
-    public Hoteldto addHotel(Hoteldto hoteldto) {
+    public HotelDto addHotel(Hotel hotel) {
         return null;
     }
 
     @Override
-    public Hoteldto updateHotel(Hoteldto hoteldto) {
+    public HotelDto updateHotel(Hotel hotel) {
         return null;
     }
 }

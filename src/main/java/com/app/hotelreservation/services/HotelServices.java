@@ -1,17 +1,18 @@
 package com.app.hotelreservation.services;
 
-import com.app.hotelreservation.dto.Hoteldto;
+import com.app.hotelreservation.dto.HotelDto;
+import com.app.hotelreservation.entities.Hotel;
 
 import java.util.List;
 
 public interface HotelServices {
-    public Hoteldto getHotelById(long hotelId);
-    public Hoteldto getHotelByName(String hotelName);
-    public Hoteldto getHotelByEmail(String hotelEmail);
-    public List<Hoteldto> getAllHotels();
+    public HotelDto getHotelById(long hotelId);
+    public HotelDto getHotelByName(String hotelName);
+    public HotelDto getHotelByEmail(String hotelEmail);
+    public List<HotelDto> getAllHotels();
     public void removeHotelById(long hotelId);
     public void removeHotelByName(String hotelName);
     public void removeHotelByEmail(String hotelEmail);
-    public Hoteldto addHotel(Hoteldto hoteldto);
-    public Hoteldto updateHotel(Hoteldto hoteldto);
+    public HotelDto addHotel(Hotel hotel);
+    public HotelDto updateHotel(Hotel hotel);
 }

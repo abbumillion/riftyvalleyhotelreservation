@@ -1,6 +1,7 @@
 package com.app.hotelreservation.serviceimp;
 
 import com.app.hotelreservation.dto.PlaceDto;
+import com.app.hotelreservation.entities.Place;
 import com.app.hotelreservation.repository.PlaceRepository;
 import com.app.hotelreservation.services.PlaceService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,15 +15,14 @@ public class PlaceServiceImp implements PlaceService {
 
 
     @Override
-    public PlaceDto getPlaceById(long id) {
+    public PlaceDto getPlaceById(Long placeId) {
         return null;
     }
 
     @Override
-    public PlaceDto getPlaceByName(String name) {
+    public PlaceDto getPlaceByName(String placeName) {
         return null;
     }
-
 
     @Override
     public List<PlaceDto> getAllPlaces() {
@@ -30,7 +30,7 @@ public class PlaceServiceImp implements PlaceService {
     }
 
     @Override
-    public void removePlaceById(long placeId) {
+    public void removePlaceById(Long placeId) {
 
     }
 
@@ -40,12 +40,12 @@ public class PlaceServiceImp implements PlaceService {
     }
 
     @Override
-    public PlaceDto addPlace(PlaceDto placeDto) {
+    public PlaceDto addPlace(Place place) {
         return null;
     }
 
     @Override
-    public PlaceDto updatePlace(PlaceDto placeDto) {
+    public PlaceDto updatePlace(Place place) {
         return null;
     }
 }
